@@ -22,7 +22,7 @@ View(msleep)
 ggplot(data=penguins) + geom_point(mapping = aes(x=flipper_length_mm, y=body_mass_g))
 
 
-#We need to a bit of cleaning in our nsleep data, grouping by vore with the average total sleep of each cat
+#We need to a bit of cleaning in our msleep data, grouping by vore with the average total sleep of each cat
 msleep_group <- msleep %>% 
     group_by(vore) %>% 
     summarise(avg_sleep = sleep_total)
